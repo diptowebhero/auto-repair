@@ -27,7 +27,7 @@ const useFirebase = () => {
       .then((data) => setAdmin(data.admin));
   }, [user.email]);
   //sign in new user
-  const registerNewUser = (email, password, name, navigate) => {
+  const registerNewUser = (email, password, name,navigate) => {
     setLoading(true);
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
@@ -39,7 +39,7 @@ const useFirebase = () => {
         savedUser(email, name, "POST");
         setUser(user, newUser);
         setError("");
-        navigate('/');
+       navigate('/')
       })
       .catch((error) => {
         setError(error.message);
@@ -70,7 +70,7 @@ const useFirebase = () => {
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         const user = result.user;
-        const destination = location.state.from || "/";
+        const destination = location?.state?.from || "/";
         savedUser(user.email, user.displayName, "PUT");
         setUser(user);
         setError("");

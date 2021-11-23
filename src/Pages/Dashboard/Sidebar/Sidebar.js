@@ -15,12 +15,15 @@ const Sidebar = () => {
               {!admin && (
                 <>
                   <li>
+                    <i className="fas fa-user mx-2"/>
                     <Link to="/dashboard/profile">Profile</Link>
                   </li>
                   <li>
+                  <i class="fas fa-clipboard-list mx-2"></i>
                     <Link to="/dashboard/bookList">Book List</Link>
                   </li>
                   <li>
+                    <i class="far fa-comment-dots mx-2"></i>
                     <Link to="/dashboard/review">Review</Link>
                   </li>
                 </>
@@ -28,19 +31,22 @@ const Sidebar = () => {
               {admin && (
                 <>
                   <li>
+                    <i class="fas fa-cog mx-2"></i>
                     <Link to="/dashboard/mangeOrder">Manage Orders</Link>
                   </li>
                   <li>
+                    <i class="fas fa-user-plus mx-2"></i>
                     <Link to="/dashboard/admin">Make Admin</Link>
                   </li>
                   <li>
+                    <i class="fas fa-plus mx-2"></i>
                     <Link to="/dashboard/addService">Add Service</Link>
                   </li>
                 </>
               )}
             </ul>
           </div>
-          <div style={{ marginTop: "50vh" }} className="text-center">
+          <div style={{ marginTop: "50vh" }} className="text-center back-btn">
             <Link to="/">
               <Button variant="info" className="main-button">
                 Back Home

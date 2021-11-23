@@ -1,7 +1,11 @@
 Nav a {
-  color: #000 !important;
+  color: #2b2b2b !important;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 18px;
+  transition:0.3s;
+}
+Nav a:hover{
+  color: #f63e7b!important;
 }
 .nav-logo {
   font-size: 28px;

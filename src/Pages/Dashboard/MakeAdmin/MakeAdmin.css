@@ -20,3 +20,15 @@
     font-weight: 500;
     border-radius: 5px;
 }
+@media only screen and (max-width: 668px){
+    .admin-form{
+        width: 100%;
+        margin-left: 11px;
+    }
+    .admin-form input{
+        width: 66%;
+    }
+    .admin-form button{
+        width: 81px;
+    }
+}

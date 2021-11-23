@@ -1,4 +1,11 @@
-.profile{
-    width: 300px;
-    margin: 100px auto;
+.profile {
+  width: 300px;
+  margin: 100px auto;
+}
+@media only screen and (max-width: 668px) {
+  .cards {
+    margin-left: 26px;
+    width: auto;
+    margin-bottom: 10px;
+  }
 }

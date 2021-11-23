@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import useAuth from "../../../Hook/useAuth";
 
@@ -8,8 +8,7 @@ const Register = () => {
   const [registerData, setRegisterData] = useState({});
   const { AllContext } = useAuth();
   const { registerNewUser, error } = AllContext;
-  const navigate = useNavigate();
-  const location = useLocation();
+  const navigate = useNavigate()
   const handleOnblur = (e) => {
     const field = e.target.name;
     const value = e.target.value;
@@ -32,8 +31,8 @@ const Register = () => {
       registerData.email,
       registerData.password,
       registerData.name,
-      location,
       navigate
+     
     );
   };
   return (

@@ -9,7 +9,7 @@ const Profile = () => {
   const { email, displayName, photoURL } = user;
   return (
     <Container style={{ maxWidth: "26rem"}}>
-        <Card className="border-0 shadow mt-5">
+        <Card className="border-0 shadow-lg mt-5 cards">
             <Card.Header as={"h4"} className="text-center border-0 mt-1">Profile</Card.Header>
             <Card.Body className="">
                 <div className="d-flex flex-column align-items-center text-center">
