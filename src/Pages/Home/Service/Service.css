@@ -1,0 +1,36 @@
+.card-container{
+  border-radius:15px;
+  transition:0.3s;
+  max-width:25rem;
+}
+.card-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.btn-service {
+  background: #f63e7b;
+  border: none;
+  color: White;
+  width: 120px;
+  height: 42px;
+  border-radius: 30px;
+}
+.card-body h5, .dollar{
+    font-weight: 700;
+    color: #2b2b2b !important;
+}
+.card-body p{
+  color: #404655;
+  overflow: auto;
+  height: 80px;
+  text-align: center;
+  margin: auto;
+  font-size:16px;
+  font-weight:500;
+}
+.title{
+    color: #111430 !important;
+    font-weight:600;
+    font-size: 20px;
+}
+

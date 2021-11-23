@@ -1,0 +1,22 @@
+.admin-form{
+    border-radius: 10px;
+    padding-top: 7rem!important;
+    padding-bottom: 7rem!important;
+}
+.admin-form input{
+    width: 30%;
+    height: 50px;
+    border: 1px solid gray;
+    background: #efeff5;
+    padding: 10px;
+    border-radius: 5px;
+}
+.admin-form button{
+    width: 110px;
+    height:50px;
+    border: none;
+    background: #f63e7b;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+}

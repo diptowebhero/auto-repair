@@ -1,0 +1,34 @@
+.banner-text h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 48px;
+    color: #111430;
+}
+.banner-text p{
+    font-size: 17px;
+    color: #666666;
+    font-weight:500;
+    letter-spacing:1.5px;
+}
+.banner-text .btn-banner{
+    background-color: #F63E7B;
+    width: 186px;
+    height: 47px;
+    color: #fff;
+    font-size:17px;
+}
+
+@media only screen and (max-width: 668px) {
+    .banner-text h2{
+        font-size: 34px;
+    }
+  }
+
+.header{
+    background: url('../../../assets/images/bg.png');
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: maintain;
+    width: 100%;
+    height: 100%;
+}

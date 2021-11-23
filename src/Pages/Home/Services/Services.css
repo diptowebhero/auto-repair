@@ -1,0 +1,21 @@
+.services h1 {
+  font-weight: 600;
+  margin-top: 1rem;
+  position: relative;
+}
+.services h1::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom:-20px;
+    width: 6rem;
+    height: 3px;
+    -webkit-transform:translateX(-50%) ;
+    transform: translateX(-50%);
+    background-color: #F63E7B;
+    border-radius: 20px;
+}
+.services h5{
+    font-weight: 700;
+    color:#F63E7B;
+}

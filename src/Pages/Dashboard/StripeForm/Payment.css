@@ -1,0 +1,23 @@
+.form-main input {
+  font-size: "1.2rem";
+  line-height: 2;
+  color: "#495057";
+  letter-spacing: "0.025em";
+}
+.form-main {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.main-button {
+  background: #f63e7b;
+  border: 0;
+  color: white;
+  width: 130px;
+  height: 45px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+tr {
+  vertical-align: middle;
+}

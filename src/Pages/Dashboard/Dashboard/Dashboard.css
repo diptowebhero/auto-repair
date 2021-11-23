@@ -1,0 +1,8 @@
+.dashboard {
+  background: url(../../../assets/images/about-section-bg.a2c9a248.png);
+  width: 100%;
+  perspective: 1500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
