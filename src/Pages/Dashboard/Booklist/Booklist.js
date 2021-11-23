@@ -10,7 +10,7 @@ const Booklist = () => {
   const [orders, setOrders] = useState([]);
   const [control, setControl] = useState(false);
   useEffect(() => {
-    fetch(`http://localhost:5000/orders/${email}`)
+    fetch(`https://nameless-woodland-81515.herokuapp.com/orders/${email}`)
       .then((response) => response.json())
       .then((data) => setOrders(data));
   }, [email, control]);
@@ -23,7 +23,7 @@ const Booklist = () => {
       confirmButtonText: "Yes",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://nameless-woodland-81515.herokuapp.com/delete/${id}`, {
           method: "delete",
         })
           .then((response) => response.json())

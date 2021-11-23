@@ -14,7 +14,7 @@ const AddService = () => {
     formData.append("title", name);
     formData.append("desc", desc);
     e.preventDefault();
-    fetch("http://localhost:5000/services", {
+    fetch("https://nameless-woodland-81515.herokuapp.com/services", {
       method: "POST",
       body: formData,
     })

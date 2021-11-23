@@ -6,7 +6,7 @@ const ManageAllOrders = () => {
   const [orders, setOrders] = useState([]);
   const [control, setControl] = useState(false);
   useEffect(() => {
-    fetch("http://localhost:5000/orders")
+    fetch("https://nameless-woodland-81515.herokuapp.com/orders")
       .then((response) => response.json())
       .then((data) => setOrders(data));
   }, [control]);
@@ -19,7 +19,7 @@ const ManageAllOrders = () => {
       confirmButtonText: "Yes",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://nameless-woodland-81515.herokuapp.com/delete/${id}`, {
           method: "delete",
         })
           .then((response) => response.json())
@@ -36,7 +36,7 @@ const ManageAllOrders = () => {
   };
 
   const confirmOrder = (id) => {
-    fetch(`http://localhost:5000/confirm/${id}`, {
+    fetch(`https://nameless-woodland-81515.herokuapp.com/confirm/${id}`, {
       method: "PUT",
     })
       .then((response) => response.json())

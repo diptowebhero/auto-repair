@@ -45,7 +45,7 @@ const StripePaymentForm = () => {
   const [product, setOrder] = useState({});
   const [error, setError] = useState("");
   useEffect(() => {
-    fetch(`http://localhost:5000/order/${bookingId}`)
+    fetch(`https://nameless-woodland-81515.herokuapp.com/order/${bookingId}`)
       .then((response) => response.json())
       .then((data) => setOrder(data[0]));
   }, [bookingId]);
@@ -72,7 +72,7 @@ const StripePaymentForm = () => {
       confirmButtonText: "Yes",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch("http://localhost:5000/addOrder", {
+        fetch("https://nameless-woodland-81515.herokuapp.com/addOrder", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify({

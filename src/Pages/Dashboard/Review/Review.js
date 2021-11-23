@@ -13,7 +13,7 @@ const Review = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     data.photoURL = photoURL;
-    fetch("http://localhost:5000/review", {
+    fetch("https://nameless-woodland-81515.herokuapp.com/review", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
