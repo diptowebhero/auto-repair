@@ -43,7 +43,7 @@ const StripePaymentForm = () => {
   const { bookingId } = useParams();
   const { register, handleSubmit, reset } = useForm();
   const [product, setOrder] = useState({});
-  const [error, setError] = useState("");
+  
   useEffect(() => {
     fetch(`https://nameless-woodland-81515.herokuapp.com/order/${bookingId}`)
       .then((response) => response.json())
@@ -63,7 +63,7 @@ const StripePaymentForm = () => {
       card,
     });
     if (error) {
-      setError(error.message);
+      return Swal.fire("Failed!", error.message, "error", { dangerMode: true });
     } 
     Swal.fire({
       icon: "warning",
@@ -189,9 +189,7 @@ const StripePaymentForm = () => {
           </Col>
         </Row>
         <div>
-          {error && (
-            <p className="m-0 text-center text-danger fw-bold">{error}</p>
-          )}
+          
         </div>
         <div className="text-center mt-5">
           <button
