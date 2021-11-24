@@ -7,8 +7,8 @@ import { Swiper, SwiperSlide } from "swiper/react/swiper-react.js";
 import loader from "../../../assets/images/loader.gif";
 import 'swiper/swiper-bundle.min.css'
 const Testimonials = () => {
-  const [reviews, setReviews] = useState([]);
   SwiperCore.use([Pagination, Autoplay]);
+  const [reviews, setReviews] = useState([]);
   useEffect(() => {
     fetch("https://nameless-woodland-81515.herokuapp.com/review")
       .then((response) => response.json())

@@ -6,7 +6,7 @@ import img from "../../../assets/images/user.png";
 const Testimonial = (props) => {
   const { name, description, rating, address, photoURL } = props.testimonial;
   return (
-    <Col className="mb-5 text-center service">
+    <Col className="mb-5 text-center service mt-4">
       <Fade bottom duration={2500} distance="40px">
         <Card
           className="border-0 py-4 shadow card-container"
@@ -38,7 +38,7 @@ const Testimonial = (props) => {
             <Card.Title as="h5" className="my-4 title">
               {name}
             </Card.Title>
-            <Card.Title as="h5" className="my-4 title">
+            <Card.Title as="h6" className="my-4 title">
               {address}
             </Card.Title>
             <Card.Text as="h6" className="text-muted">

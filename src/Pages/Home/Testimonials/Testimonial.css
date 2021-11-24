@@ -4,3 +4,6 @@
 .card-bodys h5{
   line-height:5px;
 }
+.card-bodys p{
+  overflow: auto;
+}
