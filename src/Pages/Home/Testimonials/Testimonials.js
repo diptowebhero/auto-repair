@@ -9,13 +9,15 @@ import 'swiper/swiper-bundle.min.css'
 const Testimonials = () => {
   SwiperCore.use([Pagination, Autoplay]);
   const [reviews, setReviews] = useState([]);
+  const [control, setControl] = useState(false);
   useEffect(() => {
     fetch("https://nameless-woodland-81515.herokuapp.com/review")
       .then((response) => response.json())
       .then((data) => {
         setReviews(data);
+        setControl(!control);
       });
-  }, []);
+  }, [control]);
   return (
     <div className="testimonials">
       <Container>
